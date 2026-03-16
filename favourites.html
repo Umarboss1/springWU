@@ -9,19 +9,36 @@
     <body>
 
         <header class="navbar">
-            <a href="home.html"><div class="logo">myShoppy ai</div></a>
+            <div class="hamburger" id="hamburger">☰</div>
+
+            <strong><a href="home.html" class="logo">myShoppy ai</a></strong>
+
             <nav class="nav-links">
-                <a href="home.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
-                <a href="favourites.html">Favourites</a>
+                <strong><a href="home.html">Home</a></strong>
+                <strong><a href="about.html">About Us</a></strong>
+                <strong><a href="contact.html">Contact</a></strong>
+                <strong><a href="favourites.html">Favourites</a></strong>
             </nav>
+
             <div class="auth-buttons">
-                <button class="btn-signin">Sign In</button>
-                <button class="btn-signup">Sign Up</button>
+                <strong><button class="btn-signin">Sign In</button></strong>
+                <strong><button class="btn-signup">Sign Up</button></strong>
             </div>
         </header>
-        </section>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <strong><a href="home.html">Home</a></strong>
+            <strong><a href="about.html">About Us</a></strong>
+            <strong><a href="contact.html">Contact</a></strong>
+            <strong><a href="favourites.html">Favourites</a></strong>
+
+            <div class="auth-buttons">
+                <strong><button class="btn-signin">Sign In</button></strong>
+                <strong><button class="btn-signup">Sign Up</button></strong>
+            </div>
+        </div>
+        <div class="fade-layer" id="fadeLayer"></div>
+        
         <h1>Your favourties</h1>
 
         <div class="Products">
@@ -115,5 +132,6 @@
                 </a>
             </p>
         </div>
+        <script src="js/main.js"></script>
     </body>
 </html>

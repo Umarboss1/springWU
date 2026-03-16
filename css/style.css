@@ -10,6 +10,7 @@
     padding: 20px 5%;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .navbar a{
@@ -112,6 +113,17 @@
     font-size: 1.2rem;
 }
 
+.mobile-menu .auth-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.mobile-menu .auth-buttons button{
+    width: 80px;
+}
+
 .mobile-menu.active{
     left: 0;
 }
@@ -122,23 +134,27 @@
     }
 
     .auth-buttons{
-        justify-self: end;
-        display: flex;
-        gap: 8px;    
+        display: none;
     }
 
     .hamburger{
         display: block;
         justify-self: start;
+        font-size: 2.5rem;
     }
 
     .navbar{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: auto 1fr auto ;
         align-items: center;
+        position: relative;
     }
 
     .logo{
-        justify-self: center;
+        position: absolute;
+        font-size: 1.3rem;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
     } 
 
     .hero-content h1{
@@ -147,8 +163,9 @@
 
     .btn-signin,
     .btn-signup{
-        padding: 9px 16px;
-        font-size: 0.8rem;
+        padding: 6px 10px;
+        font-size: 0.75rem;
+        white-space: nowrap;
     }
 }
 
@@ -168,4 +185,162 @@
 .fade-layer.visible{
     opacity: 1;
     visibility: visible;
+}
+
+
+.contact-page{
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 5%;
+}
+
+.contactbody{
+    background-color: #191818
+}
+
+.contact-hero{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-hero h1{
+    font-size: 3.5rem;
+    background: linear-gradient(90deg, #8258f2, #2c1a64);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+.contact-hero p{
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.info-column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-text{
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+}
+
+.info-text h3{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.info-text p{
+    color: #a1a1aa;
+    font-size: 0.95rem;
+}
+
+.info-text .note{
+    font-size: 0.8rem;
+    color: #71717a;
+    margin-top: 10px;
+}
+
+.form-wrapper{
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+.input-group{
+    margin-bottom: 0 auto 20px auto;
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    border-color: #8458f2;
+}
+
+.btn-submit-gradient {
+    width: 100%;
+    max-width: 420px;
+    margin: 10px auto 0 auto;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(180deg,
+    #8458f2 0%,
+    #2c1a64 50%,
+    #8458f2 75%,
+    #2c1a64 100%);;
+    transition: 0.3s;
+}
+
+.btn-submit-gradient:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+}
+
+@media (max-width: 768px){
+    .contact-container{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-hero h1{
+        font-size: 2.4rem;
+    }
+
+    .contact-page{
+        margin: 60px auto;
+    }
+
+    .form-wrapper{
+        padding: 25px;
+    }
+
+    .info-text{
+        padding: 20px;
+    }
+
+    .btn-submit-gradient{
+        max-width: 100%;
+    }
 }
