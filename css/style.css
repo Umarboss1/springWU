@@ -188,14 +188,14 @@
 }
 
 
-.contact-page{
+.contactbody{
+    background-color: #191818
+}
+
+.contactsida{
     max-width: 1200px;
     margin: 80px auto;
     padding: 0 5%;
-}
-
-.contactbody{
-    background-color: #191818
 }
 
 .contact-hero{
@@ -222,6 +222,14 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: stretch;
+}
+
+.info-text:hover,
+.form-wrapper:hover{
+    transform: translateY(-5px);
+    border-color: #8458f2;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .info-column{
@@ -343,4 +351,224 @@
     .btn-submit-gradient{
         max-width: 100%;
     }
+}
+
+
+.aboutbody{
+    background-color: #191818;
+    color: white;
+}
+.aboutbox {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 5%;
+    color: white;
+}
+
+.abouttopp {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.abouttopp h1 {
+    font-size: 3.5rem;
+    background: linear-gradient(90deg, #8258f2, #2c1a64);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.introtext {
+    font-size: 1.1rem;
+    color: #a1a1aa;
+    line-height: 1.6;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.featurekort {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.featurekort:hover {
+    transform: translateY(-5px);
+    border-color: #8458f2;
+}
+
+.featurekort h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.featurekort p {
+    color: #a1a1aa;
+    line-height: 1.5;
+}
+
+.storysektion {
+    margin-top: 40px;
+}
+
+.storykort {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.storykort h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.storyinn p {
+    color: #a1a1aa;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .abouttopp h1 {
+        font-size: 2.5rem;
+    }
+
+    .storykort {
+        padding: 25px;
+    }
+}
+
+.favouritesbody {
+    background-color: #191818;
+    color: white;
+}
+
+.titel {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 3rem;
+    background: linear-gradient(90deg, #8258f2, #2c1a64);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Produkter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    padding: 0 5%;
+}
+
+.kort {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+}
+
+.kort:hover {
+    transform: translateY(-10px);
+    border-color: #8458f2;
+}
+
+.bild {
+    width: 100%;
+    height: 250px;
+    background-color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.bild img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.prdukt-info {
+    padding: 25px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.prdukt-info strong {
+    font-size: 1.2rem;
+}
+
+.prdukt-info button {
+    width: 100%;
+    margin-top: auto;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(180deg,
+    #8458f2 0%,
+    #2c1a64 50%,
+    #8458f2 75%,
+    #2c1a64 100%);
+    transition: 0.3s;
+}
+
+.prdukt-info button:hover {
+    transform: scale(1.03);
+    filter: brightness(1.2);
+}
+
+@media (max-width: 768px) {
+    .Products {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        padding: 0 10%;
+    }
+
+    .titel {
+        font-size: 2.2rem;
+        margin: 30px 0;
+    }
+
+    .bild {
+        height: 200px;
+    }
+
+    .prdukt-info {
+        padding: 15px;
+    }
+
+    .prdukt-info strong {
+        font-size: 1.1rem;
+    }
+}
+
+.chat-body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #191818;
 }
