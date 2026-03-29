@@ -542,7 +542,7 @@
 }
 
 @media (max-width: 768px) {
-    .Products {
+    .Produkter {
         grid-template-columns: 1fr; 
         gap: 20px;
         padding: 0 10%;
