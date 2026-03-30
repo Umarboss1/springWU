@@ -574,4 +574,140 @@
     flex-direction: column;
     height: 100vh;
     background-color: #191818;
+    margin: 0;
+    overflow: hidden;
+}
+
+.chat-body > aside, 
+.chat-body > main {
+    display: flex;
+}
+
+.chat-main-container{
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.sidebar{
+    width: 260px;
+    background-color:  #191818;
+    border-right: 1px solid #4a2b9d;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.btn-new-chat {
+    margin: 20px;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.btn-new-chat:hover{
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.historia {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.historialista {
+    list-style: none;
+    padding: 0;
+}
+.historialista li {
+    padding: 12px 20px;
+    color: #e4e4e7;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.historialista li:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+.historia-footer {
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: auto;
+}
+
+.anvandarprof{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.chat-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chatmeddelande {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.chattextplats {
+    padding: 10px 15% 20px 15%;
+}
+
+.inputplats {
+    display: flex;
+    align-items: center;
+    background: #191818;
+    border: 1px solid #4a2b9d;
+    border-radius: 25px;
+    padding: 10px 20px;
+    gap: 15px;
+}
+
+.inputplats input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.btn-add, .btn-send {
+    background: transparent;
+    border: none;
+    color: #a1a1aa;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.btn-send {
+    background: #4a2b9d;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #191818;
+}
+
+footer p {
+    font-size: 0.75rem;
+    color: #71717a;
 }
