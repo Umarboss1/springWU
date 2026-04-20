@@ -4,7 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>myShoppy ai - Chatpage</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     </head>
     <body class="chat-body">
         <header class="navbar">
@@ -40,9 +44,12 @@
         <div class="fade-layer" id="fadeLayer"></div>
 
         <div class="chat-main-container">
+            <button class="meny" onclick="toggleSidebar()">
+                <span class="material-symbols-outlined">chevron_right</span>
+            </button>
             <aside class="sidebar">
                 <button class="btn-new-chat">
-                    <i class="fas fa-plus-circle"></i> New Chat
+                    <span class="material-symbols-outlined">add</span> New Chat               
                 </button>
 
                 <nav class="historia">
@@ -60,7 +67,7 @@
 
                 <div class="historia-footer">
                     <div class="anvandarprof">
-                        <i class="fas fa-user-circle"></i>
+                        <span class="material-symbols-outlined">account_circle</span>                        
                         <span>Username</span>
                     </div>
                 </div>
@@ -72,16 +79,64 @@
 
                 <div class="chattextplats">
                     <div class="inputplats">
-                        <button class="btn-add"><i class="fas fa-plus"></i></button>
                         <input type="text" placeholder="Ask about products">
-                        <button class="btn-send"><i class="fas fa-arrow-up"></i></button>
+                        
+                        <div class="plus">
+                            <button class="btn-add">
+                                <span class="material-symbols-outlined">add_2</span>
+                            </button>
+
+                            <button class="mic">
+                                <span class="material-symbols-outlined">mic</span>
+                            </button>
+
+                            <button class="skicka">
+                                <span class="material-symbols-outlined">north</span>
+                            </button>
+
+                        </div>
                     </div>
                 </div>
+                <strong><p class="footer">No one is perfect. The same applies with MyShoppy.Ai</p></strong>
+                <div class="sideview" id="authPopup">
+            <div class="sideviewbox">
+                
+                <div class="logbox" id="signUpBox">
+                    <h2>Sign Up</h2>
+                    <input type="email" placeholder="Enter Your Email Address">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirm Password">
+
+                    <p class="divider">Or</p>
+
+                    <button class="social google">
+                        <img src="img/Googleps1.png" alt="Google"> Sign Up with Google
+                    </button>
+                    <button class="social facebook">
+                        <img src="img/image.png" alt="Facebook"> Sign Up with Facebook
+                    </button>
+                    <p class="bytlogin">Already have an account? <span id="toSignIn">Sign In</span></p>
+                </div>
+
+                <div class="logbox hidden" id="signInBox">
+                    <h2>Sign In</h2>
+                    <input type="email" placeholder="Enter Your Email">
+                    <input type="password" placeholder="Password">
+
+                    <p class="divider">Or</p>
+
+                    <button class="social google">
+                        <img src="img/Googleps1.png" alt="Google"> Sign Up with Google
+                    </button>
+                    <button class="social facebook">
+                        <img src="img/image.png" alt="Facebook"> Sign Up with Facebook
+                    </button>
+                    <p class="bytlogin">Don't have an account? <span id="toSignUp">Sign Up</span></p>
+                </div>
+            </div>
+        </div>
             </main>
         </div>
-        <footer>
-            <p>No one is perfect. The same applies with MyShoppy.Ai</p>
-        </footer>
         <script src="js/main.js"></script>
     </body>
 </html>

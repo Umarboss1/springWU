@@ -5,9 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>myShoppy ai - Home</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     </head>
     <body class="homebody">
-
+        <main>
         <header class="navbar">
             <div class="hamburger" id="hamburger">☰</div>
 
@@ -43,9 +47,48 @@
             <div class="hero-content">
                 <h1>Your smart AI Powered <br> Shopping Assistant</h1>
                 <p>My Shoppy Ai helps you find the best products, comparize <br> prices, and make your shopping experience effortless.</p>
-                <a href="chat.html"><button class="btn-ask">Ask Ai</button></a>
+                <a href="chat.html" class="btn-ask">Ask Ai</a>
             </div>
         </section>
-    <script src="js/main.js"></script>
+        </main>
+        <div class="sideview" id="authPopup">
+            <div class="sideviewbox">
+
+                <div class="logbox" id="signUpBox">
+                    <h2>Sign Up</h2>
+                    <input type="email" placeholder="Enter Your Email Address">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirm Password">
+
+                    <p class="divider">Or</p>
+
+                    <button class="social google">
+                        <img src="img/Googleps1.png" alt="Google"> Sign Up with Google
+                    </button>
+                    <button class="social facebook">
+                        <img src="img/image.png" alt="Facebook"> Sign Up with Facebook
+                    </button>
+                    <p class="bytlogin">Already have an account? <span id="toSignIn">Sign In</span></p>
+                </div>
+
+                <div class="logbox hidden" id="signInBox">
+                    <h2>Sign In</h2>
+                    <input type="email" placeholder="Enter Your Email">
+                    <input type="password" placeholder="Password">
+
+                    <p class="divider">Or</p>
+
+                    <button class="social google">
+                        <img src="img/Googleps1.png" alt="Google"> Sign Up with Google
+                    </button>
+                    <button class="social facebook">
+                        <img src="img/image.png" alt="Facebook"> Sign Up with Facebook
+                    </button>
+                    <p class="bytlogin">Don't have an account? <span id="toSignUp">Sign Up</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="skuggyta" id="authOverlay"></div>
+        <script src="js/main.js"></script>
     </body>
 </html>

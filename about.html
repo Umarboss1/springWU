@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>myShoppy ai - About Us</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     </head>
     <body class="aboutbody">
 
@@ -45,27 +48,27 @@
                 <p class="introtext">We're revolutionizing online shopping with artificial intelligence. Our mission is to make <br>shopping smarter, faster, and more enjoyable for everyone.</p>
             </section>
             
-            <section class="features-grid">
+            <div class="features-grid">
                 <article class="featurekort">
-                    <h3>AI-Powered Intelligence</h3>
+                    <h2>AI-Powered Intelligence</h2>
                     <p>Our advanced AI understands your preferences and provides personalized product recommendations</p>
                 </article>
 
                 <article class="featurekort">
-                    <h3>Smart Price Comparison</h3>
+                    <h2>Smart Price Comparison</h2>
                     <p>Automatically compare prices across multiple retailers to ensure you get the best deal</p>
                 </article>
 
                 <article class="featurekort">
-                    <h3>Instant Responses</h3>
+                    <h2>Instant Responses</h2>
                     <p>Get immediate answers to your product questions with our lightning-fast AI assistant</p>
                 </article>
 
                 <article class="featurekort">
-                    <h3>Trusted & Secure</h3>
+                    <h2>Trusted & Secure</h2>
                     <p>Your data privacy and security are our top priorities with end-to-end encryption</p>
                 </article>
-            </section>
+            </div>
 
             <section class="storysektion">
                 <div class="storykort">
@@ -77,6 +80,43 @@
                     </div>
                 </div>
             </section>
+            <div class="sideview" id="authPopup">
+            <div class="sideviewbox">
+
+                <div class="logbox" id="signUpBox">
+                    <h2>Sign Up</h2>
+                    <input type="email" placeholder="Enter Your Email Address">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirm Password">
+
+                    <p class="divider">Or</p>
+
+                    <button class="social google">
+                        <img src="img/Googleps1.png" alt="Google"> Sign Up with Google
+                    </button>
+                    <button class="social facebook">
+                        <img src="img/image.png" alt="Facebook"> Sign Up with Facebook
+                    </button>
+                    <p class="bytlogin">Already have an account? <span id="toSignIn">Sign In</span></p>
+                </div>
+
+                <div class="logbox hidden" id="signInBox">
+                    <h2>Sign In</h2>
+                    <input type="email" placeholder="Enter Your Email">
+                    <input type="password" placeholder="Password">
+
+                    <p class="divider">Or</p>
+
+                    <button class="social google">
+                        <img src="img/Googleps1.png" alt="Google"> Sign Up with Google
+                    </button>
+                    <button class="social facebook">
+                        <img src="img/image.png" alt="Facebook"> Sign Up with Facebook
+                    </button>
+                    <p class="bytlogin">Don't have an account? <span id="toSignUp">Sign Up</span></p>
+                </div>
+            </div>
+        </div>
         </main>
         <script src="js/main.js"></script>
     </body>
